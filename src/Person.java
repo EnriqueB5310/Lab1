@@ -14,6 +14,10 @@ public class Person {
     Arms arms = new Arms();
     Legs legs = new Legs();
 
+    public  Person() {
+        CreatePerson();
+    }
+
 public  void CreatePerson() {
 
 System.out.println("How old are you? ");
