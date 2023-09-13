@@ -38,6 +38,25 @@ public void display() {
 }
 
 public void activities() {
+        Scanner choose = new Scanner(System.in);
+        int choice = 0;
+        System.out.println("Select an activity, (enter -1 to exit)");
+        System.out.println("1: workout, 2: take a walk, 3: jog, 4: nap");
+        while(choice >= 0) {
+            switch(choice){
+                case 1: arms.exercise();
+                break;
+                case 2: legs.walk();
+                break;
+                case 3:legs.jog();
+                break;
+                case 4: rest();
+                break;
+                default: break;
+
+            }
+
+        }
 
 }
 
