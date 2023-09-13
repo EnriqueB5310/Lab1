@@ -42,7 +42,11 @@ public void activities() {
         int choice = 0;
         System.out.println("Select an activity, (enter -1 to exit)");
         System.out.println("1: workout, 2: take a walk, 3: jog, 4: nap");
+        choice = choose.nextInt();
         while(choice >= 0) {
+            System.out.println("Select an activity, (enter -1 to exit)");
+            System.out.println("1: workout, 2: take a walk, 3: jog, 4: nap");
+            choice = choose.nextInt();
             switch(choice){
                 case 1: arms.exercise();
                 break;
